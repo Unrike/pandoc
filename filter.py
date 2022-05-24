@@ -5,7 +5,7 @@ headings = []
 def duplicateHeadings(element, _):
     if isinstance(element, Header):
         string = stringify(element)
-        if text in headings:
+        if string in headings:
             print("This header is present more than once:" + string)
         else:
             headings.append(string)
